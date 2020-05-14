@@ -1,6 +1,7 @@
 ---
 title: "Post: Standard"
 excerpt_separator: "<!--more-->"
+author: Albert Orozco Camacho
 categories:
   - Blog
 tags:

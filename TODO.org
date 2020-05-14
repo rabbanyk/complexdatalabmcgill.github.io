@@ -1,0 +1,5 @@
+- [ ] Beautify author design
+  - [ ] Add all authors
+  - [ ] Display a list of authors' avatars on [[index.html][index.html]]
+  - [ ] Make an individual page for each author
+- [ ] Add sections: **Literature review, announcements, works in the group**
