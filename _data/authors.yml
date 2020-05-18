@@ -1,7 +1,7 @@
 Albert Orozco Camacho:
   name        : "Albert Orozco Camacho"
   bio         : "MSc student interested in all things related to social network interactions."
-  avatar      : "/assets/images/albert.png"
+  avatar      : "/assets/images/biopic/albert.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -16,7 +16,7 @@ Albert Orozco Camacho:
 Jacob Danovitch:
   name        : "Jacob Danovitch"
   bio         : "I ordered what?"
-  avatar      : "/assets/images/jacob.jpg"
+  avatar      : "/assets/images/biopic/jacob.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

@@ -1,0 +1,58 @@
+- title: "Staff"
+  staff: true
+  people: 
+    - name: Gijsbert Verdoes
+      photo: verdoes.jpg
+      duration: In the Allan Lab 2015 - 2018, now Project manager at the FMD
+      info: Fine mechanical engineer associated with the FMD working in our group
+      email: verdoes@fmd.physics.leidenuniv.nl
+      education: 
+        - Leidse instrumentmakers School
+
+    - name: Irene Battisti
+      photo: irene.jpg
+      info: PhD student
+      duration: In the Allan Lab Jan 2015 to June 2019, now R&D scientist at Nearfield Instruments
+      email: Battisti@Physics.LeidenUniv.nl
+      education: 
+        - Master Padova University
+        - Master thesis at Leiden University with <a href="https://www.physics.leidenuniv.nl/vanruitenbeek">Jan van Ruitenbeek</a>
+        - PhD Leiden University!
+
+- title: "Visitors"
+  staff: false
+  people:
+    - name: Nikolaos Iliopoulos, Spring 2016
+    - name: Vitaly Fedoseev, all of 2016
+    - name: Alexander Vanstone, Spring 2016
+    - name: Ramakrishna Aluru, Summer 2018
+    - name: Changwei Zou, Spring 2018
+    - name: Kemal Demir, Summer 2019
+    - name: Vincent Stalman, 2019
+
+- title: "Master students"
+  staff: false
+  people: 
+    - name: Maarten Leeuwenhoek, Spring 2015
+    - name: Koen M Bastiaans, Spring 2015
+    - name: Farshaad Hoeseni, Fall 2015
+    - name: Oliver Ostojic, Spring 2016
+    - name: Tjerk Benschop, Spring 2016
+    - name: Bert Visscher, Fall 2017
+    - name: Ahmad Jamalzada, Fall 2017
+    - name: Corne Koks, Fall 2018
+    - name: Damian Bouwmeester, Summer 2019
+
+- title: "Bachelor Students"
+  staff: false
+  people: 
+    - name: Vishnu Saj, Spring 2017
+    - name: Arjo Andringa, Spring 2016
+    - name: Joey Braspenning, Spring 2017
+    - name: Tjerk Benschop, Summer 2017
+    - name: Daniëlle van Klink, Spring 2016
+    - name: Margot Leemker, Spring 2017
+    - name: Sietske Lensen, Spring 2017
+    - name: Jasper van Egeraat, Spring 2018
+    - name: Ringo Groenewegen, Spring 2018
+    - name: Amber Vervloet, Spring 2019

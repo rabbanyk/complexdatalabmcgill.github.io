@@ -1,97 +1,52 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Complex Data Lab McGill
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  The McGill University's Complex Data Lab blog.
-# twitter_username: username
-repository: ComplexDataLabMcGill/complexdatalabmcgill.github.io
-github_username: ComplexDataLabMcGill
-minimal_mistakes_skin: air
-search: true
-
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: America/Toronto # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+title: Complex Data Lab
+university: McGill University
+email: your-email@domain.com
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: ""
 
 include:
+  - .htaccess
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: _sass
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-datapage-generator
-
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-    #  url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: "https://instagram.com/"
-
-footer:
-  links:
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-    #  url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ComplexDataLabMcGill"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: "https://instagram.com/"
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 
-collections:
-  authors:
-    output: true
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
+
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -106,21 +61,25 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # authors
-  - scope:
-      path: "_authors"
-      type: authors
-    values:
-      layout: "author"
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+  # # _courses
+  # - scope:
+  #     path: ""
+  #     type: courses
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
+  # # _talks
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
