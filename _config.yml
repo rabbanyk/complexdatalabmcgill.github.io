@@ -55,6 +55,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-datapage-generator
 
 author:
   name   : "First Lastname"
@@ -86,6 +87,11 @@ footer:
     #  icon: "fab fa-fw fa-instagram"
     #  url: "https://instagram.com/"
 
+
+collections:
+  authors:
+    output: true
+
 defaults:
   # _posts
   - scope:
@@ -105,6 +111,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # authors
+  - scope:
+      path: "_authors"
+      type: authors
+    values:
+      layout: "author"
 
 category_archive:
   type: liquid

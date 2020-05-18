@@ -13,6 +13,18 @@ Albert Orozco Camacho:
       icon: "fab fa-fw fa-github-square"
       url: "https://github.com/alorozco53"
 
+Jacob Danovitch:
+  name        : "Jacob Danovitch"
+  bio         : "I ordered what?"
+  avatar      : "/assets/images/jacob.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jacob.danovitch@mail.mcgill.ca"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/danolytics"
+
 Cornelius Fiddlebone:
   name        : "Cornelius Fiddlebone"
   bio         : "I ordered what?"
