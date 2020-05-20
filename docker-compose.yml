@@ -1,0 +1,18 @@
+# https://davemateer.com/2018/01/25/Jekyll-and-Docker
+# https://michaelsoolee.com/compile-jekyll-site-docker/
+# https://ddewaele.github.io/running-jekyll-in-docker/
+
+version: '3'
+
+services:
+  jekyll: 
+    image: jekyll/jekyll:3.8
+    container_name: complexdatalabmcgill.github.io
+    environment:
+        - JEKYLL_ENV=docker
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+        - ./:/srv/jekyll
+    command: jekyll serve -H 0.0.0.0 -P 4000 --config _config.yml,_config.dev.yml  --incremental
