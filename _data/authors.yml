@@ -13,14 +13,14 @@ Albert Orozco Camacho:
       icon: "fab fa-fw fa-github-square"
       url: "https://github.com/alorozco53"
 
-Cornelius Fiddlebone:
-  name        : "Cornelius Fiddlebone"
-  bio         : "I ordered what?"
-  avatar      : "/assets/images/bio-photo.jpg"
+Kellin Pelrine:
+  name        : "Kellin Pelrine"
+  bio         : "PhD student (starting Fall 2020) excited to discuss all problems with real-world impact. Out to solve them with the magic of ML. Enjoys fusing different perspectives together with the glue of data and computation, from problem-specific domain knowledge to his background in economics and math."
+  avatar      : "/assets/images/kellin.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:cornelius@thewhip.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/rhymeswithsackit"
+      url: "mailto:kellin.pelrine@mail.mcgill.ca"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/kellinpelrine/"
