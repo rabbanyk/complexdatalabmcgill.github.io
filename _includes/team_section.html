@@ -11,9 +11,9 @@
         {% assign offset = forloop.index0 | times: 2 %}
         <div class="row">
             {% for member in section.people limit:2 offset:offset %}
-                {% include team_panel.html %}
+                {% include team_member.html %}
             {% endfor %}
         </div>
-        
+
     {% endfor %}
 </section>

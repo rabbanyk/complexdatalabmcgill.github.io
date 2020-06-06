@@ -37,9 +37,6 @@ pubtit {
 	font-weight: bold;
 }
 
-firstp {
-}
-
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -91,3 +88,34 @@ firstp {
     margin-right: 30px;
 }
 
+.bio {
+	&-header {
+		@extend .page-header;
+
+		div {
+			display: inline-block; 
+			vertical-align: top; 
+			margin-left: 0.5em;
+		}
+
+		img {
+			@extend .img-responsive;
+
+			display: inline-block;
+			width: 25%;
+		}
+	}
+
+	&-contact {
+		font-size: smaller;
+
+		ul {
+			margin-top: 0.5em;
+			list-style: none;
+		}
+
+		a > span.glyphicon {
+			margin-right: 0.5em;
+		}
+	}
+}

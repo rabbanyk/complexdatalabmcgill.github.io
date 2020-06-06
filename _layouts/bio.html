@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+{% assign name_parts = '' | split: '' %}
+{% assign name = page.name | remove: ".md" | split: " "  %}
+
+{% for part in name %}
+  {% assign capital_part = part | capitalize  %}
+  {% assign name_parts = name_parts | push: capital_part %}
+{% endfor %}
+
+{% assign display_name = name_parts | join: " " %}
+
+{% for section in site.data.team_members %}
+  {% assign person = section.people | where: "name", display_name | first %}
+  {% if person %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign contact = person.contact %}
+{% assign filtered_posts = site.posts | where: 'author', display_name %}
+{% comment %}
+TODO: Sort chronologically, limit, add feed
+{% endcomment %}
+
+<div>
+  <header class="bio-header">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ person.photo | default: 'bio-photo.jpg' }}"/>
+    <div>
+    <h1>
+        {{ display_name }} {{ page.short_name }}
+        <br/>
+        <small>{{ person.role }}</small>
+    </h1>
+    {{ content }}
+    </div>
+  </header>
+
+  {% unless filtered_posts.size == 0 %}
+    <div class="post-content">
+      <h2>Featured Posts</h2>
+      {% for post in filtered_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </div>
+    <hr/>
+  {% endunless %}
+
+
+  {% if contact %}
+    <div class="bio-contact">
+      <b>Contact</b>
+      <br/>
+      <ul>
+        {% if contact.email %}
+            <li>
+              <a href="mailto:{{ contact.email }}"> 
+                <span class="glyphicon glyphicon-envelope"></span>
+                {{ contact.email }}
+              </a>
+            </li>
+        {% endif %}
+        {% if contact.website %}
+            <li>
+              <a href="{{ contact.website }}"> 
+                <span class="glyphicon glyphicon-link"></span>
+                {{ contact.website | remove: "https://" | remove: "http://"}}
+              </a>
+            </li>
+        {% endif %}
+      </ul>
+    </div>
+  {% endif %}
+
+</div>

@@ -2,59 +2,44 @@
   people:
   - name: Reihaneh Rabbany
     photo: ""
-    info: Associate professor, started Jan 2015
-    email: milan.allan@gmail.com
-    education:
-      - Master ETHZ, Diplomarbeit with <a href="http://www.physik.uzh.ch/groups/osterwalder/">J Osterwalder</a>, University of Zurich
-      - PhD St Andrews (while at Cornell University) with <a href="http://dpmc.unige.ch/gr_baumberger/index.html">Felix Baumberger</a> and <a href="http://davisgroup.lassp.cornell.edu/">JC Davis</a>
-      - Postdoc Cornell
+    info: ""
+    contact:
+      email: rrabba@cs.mcgill.ca
+      website: http://www.reirab.com/
 
 - title: 'PhD Students'
   people:
   - name: Andy Huang
     photo: ""
-    info: PhD Student, started
-    email: placeholder
-    education:
-      - BSc. Computer Science, McGill
+    info: ""
   
   - name: Kellin Pelrine
     photo: ""
-    info: PhD Student, started Sep 2020
-    email: placeholder
-    education:
-      - MA. Economics, Yale
+    info: ""
 
 - title: "Master's Students"
   people:
   - name: Albert Orozco Camacho
     photo: albert.png
-    info: PhD Student, started December 2017
-    email: 'alorozco53@mila.quebec'
-    education:
-      - Bachelor National and Kapodistrian University of Athens with D Syvridis
-      - Master TU Delft with <a href="http://vanderzantlab.tudelft.nl/">Herre van der Zant</a>
+    info: ""
+    contact:
+      email: 'alorozco53@mila.quebec'
 
   - name: Jacob Danovitch
     photo: jacob.jpg
-    info: MSc Student, started September 2020
-    email: 'jacob.danovitch@mail.mcgill.ca'
-    education:
-      - Bachelor of Computer Science, Carleton University
+    role: "MSc. Machine Learning"
+    info: ""
+    contact:
+      email: 'jacob.danovitch@mail.mcgill.ca'
+      website: 'http://jacobdanovitch.me'
 
   - name: Aayushi Kulshrestha
     photo: ""
     info: MSc Student, started
-    email: ""
-    education:
-      - ""
   
   - name: Junhao Wang
     photo: ""
     info: MSc Student, started
-    email: ""
-    education:
-      - ""
 
 
 - title: "Undergraduate Students"
@@ -62,6 +47,3 @@
   - name: Sacha Lévy
     photo: ""
     info: ""
-    email: ""
-    education:
-      - ""
