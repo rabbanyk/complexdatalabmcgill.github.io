@@ -1,47 +1,67 @@
 - title: 'Staff'
   people:
-  - name: Milan P Allan
-    photo: Milan.jpg
+  - name: Reihaneh Rabbany
+    photo: ""
     info: Associate professor, started Jan 2015
     email: milan.allan@gmail.com
     education:
       - Master ETHZ, Diplomarbeit with <a href="http://www.physik.uzh.ch/groups/osterwalder/">J Osterwalder</a>, University of Zurich
       - PhD St Andrews (while at Cornell University) with <a href="http://dpmc.unige.ch/gr_baumberger/index.html">Felix Baumberger</a> and <a href="http://davisgroup.lassp.cornell.edu/">JC Davis</a>
       - Postdoc Cornell
-      - <a href="http://www.ethfellows.ethz.ch/">ETH fellow</a> at ETHZ with Andreas Wallraff
-      - <a href="https://www.universiteitleiden.nl/en/news/2017/07/milan-allan-wins-bryan-r.-coles-prize">Bryan R. Coles Prize 2017</a>
 
 - title: 'PhD Students'
   people:
-  - name: Jianfeng (Jacky) Ge
-    photo: Jacky.jpg
-    info: Postdoc, started Oct 2019
-    email: ge@Physics.LeidenUniv.nl
+  - name: Andy Huang
+    photo: ""
+    info: PhD Student, started
+    email: placeholder
     education:
-      - Postdoc with <a href="http://hoffman.physics.harvard.edu">Jenny Hoffman</a>, Harvard University
-      - Ph.D. with <a href="https://www.physics.sjtu.edu.cn/en/people/1/jfJia">Jinfeng Jia</a>, Shanghai Jiao Tong University
-      - B.S. East China University of Science and Technology
-
-  - name: Koen M Bastiaans
-    photo: Koen.jpg
-    info: PhD Student, started Sep 2015
-    email: Bastiaans@Physics.LeidenUniv.nl
+      - BSc. Computer Science, McGill
+  
+  - name: Kellin Pelrine
+    photo: ""
+    info: PhD Student, started Sep 2020
+    email: placeholder
     education:
-      - Master Leiden University with Milan Allan
+      - MA. Economics, Yale
 
 - title: "Master's Students"
   people:
   - name: Albert Orozco Camacho
     photo: albert.png
     info: PhD Student, started December 2017
-    email: 'mailto:alorozco53@mila.quebec'
+    email: 'alorozco53@mila.quebec'
     education:
       - Bachelor National and Kapodistrian University of Athens with D Syvridis
       - Master TU Delft with <a href="http://vanderzantlab.tudelft.nl/">Herre van der Zant</a>
 
   - name: Jacob Danovitch
     photo: jacob.jpg
-    info: MSc Student, starting September 2020
-    email: 'mailto:jacob.danovitch@mail.mcgill.ca'
+    info: MSc Student, started September 2020
+    email: 'jacob.danovitch@mail.mcgill.ca'
     education:
       - Bachelor of Computer Science, Carleton University
+
+  - name: Aayushi Kulshrestha
+    photo: ""
+    info: MSc Student, started
+    email: ""
+    education:
+      - ""
+  
+  - name: Junhao Wang
+    photo: ""
+    info: MSc Student, started
+    email: ""
+    education:
+      - ""
+
+
+- title: "Undergraduate Students"
+  people:
+  - name: Sacha Lévy
+    photo: ""
+    info: ""
+    email: ""
+    education:
+      - ""
