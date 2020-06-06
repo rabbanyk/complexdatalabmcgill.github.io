@@ -16,6 +16,9 @@ description: >
 baseurl: ""
 url: ""
 
+plugins:
+  - jekyll-redirect-from
+
 include:
   - .htaccess
   - _pages
