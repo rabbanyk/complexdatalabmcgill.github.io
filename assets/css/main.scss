@@ -11,12 +11,25 @@ img { margin-bottom: 24px;
 
 body {
 	padding-top: 70px;
+
+	#content { 
+		min-height: 1000px;
+	}
 }
 
 figcaption {
     text-align: right;
     margin-top: -20px;
     margin-bottom: 20px;
+}
+
+#footer { 
+	// position: absolute;
+	// bottom: 0;
+	width: 100%;
+	font-size: x-small;
+	margin-bottom: 0;
+	margin-top: 3em;
 }
 
 
@@ -91,17 +104,19 @@ pubtit {
 .bio {
 	&-header {
 		@extend .page-header;
+		@extend .clearfix;
 
 		div {
-			display: inline-block; 
+			display: flex; 
+			flex-direction: column;
 			vertical-align: top; 
-			margin-left: 0.5em;
+			padding-left: 1em;
 		}
 
 		img {
 			@extend .img-responsive;
-
-			display: inline-block;
+			
+			float: left;
 			width: 25%;
 		}
 	}
@@ -114,8 +129,11 @@ pubtit {
 			list-style: none;
 		}
 
-		a > span.glyphicon {
-			margin-right: 0.5em;
+		a {
+			span.glyphicon, i[class*="fa"] {
+				color: black;
+				margin-right: 0.5em;
+			}
 		}
 	}
 }

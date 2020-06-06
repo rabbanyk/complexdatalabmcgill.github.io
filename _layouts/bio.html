@@ -29,18 +29,20 @@ TODO: Sort chronologically, limit, add feed
   <header class="bio-header">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ person.photo | default: 'bio-photo.jpg' }}"/>
     <div>
-    <h1>
-        {{ display_name }} {{ page.short_name }}
-        <br/>
-        <small>{{ person.role }}</small>
-    </h1>
-    {{ content }}
+      <h1>
+          {{ display_name }} {{ page.short_name }}
+          <br/>
+          <small>{{ person.role }}</small>
+      </h1>
+      <p>
+        {{ content }}
+      </p>
     </div>
   </header>
 
   {% unless filtered_posts.size == 0 %}
     <div class="post-content">
-      <h2>Featured Posts</h2>
+      <h2>Recent Posts</h2>
       {% for post in filtered_posts %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
@@ -57,7 +59,7 @@ TODO: Sort chronologically, limit, add feed
         {% if contact.email %}
             <li>
               <a href="mailto:{{ contact.email }}"> 
-                <span class="glyphicon glyphicon-envelope"></span>
+                <i class="far fa-envelope"></i>
                 {{ contact.email }}
               </a>
             </li>
@@ -65,8 +67,16 @@ TODO: Sort chronologically, limit, add feed
         {% if contact.website %}
             <li>
               <a href="{{ contact.website }}"> 
-                <span class="glyphicon glyphicon-link"></span>
+                <i class="fas fa-link"></i>
                 {{ contact.website | remove: "https://" | remove: "http://"}}
+              </a>
+            </li>
+        {% endif %}
+        {% if contact.github %}
+            <li>
+              <a href="https://github.com/{{ contact.github }}">
+                <i class="fab fa-github"></i>
+                {{ contact.github }}
               </a>
             </li>
         {% endif %}
