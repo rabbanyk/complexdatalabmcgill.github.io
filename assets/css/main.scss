@@ -1,0 +1,50 @@
+--- 
+--- 
+
+// @import "bootstrap";
+// @import "bootstrap/css/bootstrap.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css");
+
+.bio {
+    header {
+        small {
+            color: darkgrey;
+            font-weight: 200;
+        }
+
+        .content {
+            vertical-align: top;
+            padding-left: 1em;
+        }
+
+        .avatar {
+            // @extend .author__avatar;
+
+            border-radius: 5%;
+            max-width: 400px;
+            // max-height: 300px;
+        }
+    }
+    &-contact {
+        font-size: smaller;
+        ul {
+            margin-top: 0.5em;
+            list-style: none;
+        }
+        a {
+            span.glyphicon,
+            i[class*="fa"] {
+                color: black;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
+// mmistakes default
+// https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

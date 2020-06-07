@@ -32,8 +32,23 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Toronto # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
 include:
   - _pages
+  - _members
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -65,9 +80,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ComplexDataLabMcGill"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -88,6 +100,13 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _members
+  - scope:
+      path: "_members"
+      type: pages
+    values:
+      layout: bio
+      author_profile: true
 
 category_archive:
   type: liquid

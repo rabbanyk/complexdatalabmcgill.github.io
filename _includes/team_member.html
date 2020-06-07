@@ -1,0 +1,11 @@
+{% assign contact = member.contact %}
+{% assign bio_url = member.name | downcase | url_encode %}
+
+<div class="col-sm-6">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ member.photo | default: 'bio-photo.jpg' }}"
+        class="img-responsive" width="25%" style="float: left" />
+    <h4><a href="/team/{{ bio_url }}" style="color: black;">{{ member.name }}</a></h4>
+    <small>
+        {{ member.role }}
+    </small>
+</div>
