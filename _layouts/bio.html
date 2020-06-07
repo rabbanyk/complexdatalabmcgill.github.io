@@ -12,33 +12,28 @@ layout: default
 
 {% assign display_name = name_parts | join: " " %}
 
-{% for section in site.data.team %}
-  {% assign person = section.people | where: "name", display_name | first %}
-  {% if person %}
-    {% break %}
-  {% endif %}
-{% endfor %}
+{% assign person = site.data.authors[display_name] %}
 
 {% assign contact = person.contact %}
-{% assign filtered_posts = site.posts | where: 'author', display_name %}
+{% assign filtered_posts = site.posts | where: 'author', person.name %}
 {% comment %}
 TODO: Sort chronologically, limit, add feed
 {% endcomment %}
 
 
-<div class="bio container">
+<div class="bio__page container">
   <header class="row">
     <div class="author__avatar">
-      <img class="avatar" src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ person.photo | default: 'bio-photo.jpg' }}"/>
+      <img class="avatar" src="{{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ person.avatar | default: 'bio-photo.jpg' }}"/>
     </div>
     <div class="content col-sm-6">
       <h1>
-          {{ display_name }} {{ page.short_name }}
+          {{ person.name }}
           <br/>
-          <small>{{ person.role }}</small>
+          <small>{{ person.title }}</small>
       </h1>
       <p>
-        {{ content }}
+        {{ person.bio }}
       </p>
     </div>
   </header>
@@ -55,35 +50,19 @@ TODO: Sort chronologically, limit, add feed
   {% endunless %}
 
 
-  {% if contact %}
+  {% if person.links %}
     <div class="bio-contact">
       <b>Contact</b>
       <br/>
       <ul>
-        {% if contact.email %}
-            <li>
-              <a href="mailto:{{ contact.email }}"> 
-                <i class="far fa-envelope"></i>
-                {{ contact.email }}
-              </a>
-            </li>
-        {% endif %}
-        {% if contact.website %}
-            <li>
-              <a href="{{ contact.website }}"> 
-                <i class="fas fa-link"></i>
-                {{ contact.website | remove: "https://" | remove: "http://"}}
-              </a>
-            </li>
-        {% endif %}
-        {% if contact.github %}
-            <li>
-              <a href="https://github.com/{{ contact.github }}">
-                <i class="fab fa-github"></i>
-                {{ contact.github }}
-              </a>
-            </li>
-        {% endif %}
+        {%- for link in person.links -%}
+          <li>
+            <a href="{{ link.url }}" style="text-decoration: none;"> 
+              <i class="{{ link.icon }}"></i>
+              {{ link.label }}
+            </a>
+          </li>
+        {%- endfor -%}
       </ul>
     </div>
   {% endif %}

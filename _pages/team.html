@@ -3,17 +3,24 @@ title: "Complex Data Lab - Team"
 excerpt: "Complex Data Lab: Team members"
 sitemap: false
 permalink: /team/
+classes: wide container team
 ---
 
-<h1>Group Members</h1>
+{% assign __authors = '' | split: ',' %}
+{% for author in site.data.authors %}
+  {% assign __authors = __authors | push:author[1] %}
+{% endfor %}
+{% include group-by-array.html collection=__authors field='role' %}
 
-<b>
+
+<p>
   We are looking for new PhD students, Postdocs, and Master students to join the team 
   <a href="{{ site.url }}{{ site.baseurl }}/openings">(see openings)</a>!
-</b>
+</p>
 
 
-{% for section in site.data.team %}
+{% for section_name in group_names %}
+  {% assign section = group_items[forloop.index0] | sort: "name" %}
   {% include team_section.html %}
 {% endfor %}
 

@@ -5,41 +5,77 @@
 // @import "bootstrap/css/bootstrap.css";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css");
 
-.bio {
-    header {
-        small {
-            color: darkgrey;
-            font-weight: 200;
-        }
-
-        .content {
-            vertical-align: top;
-            padding-left: 1em;
-        }
-
-        .avatar {
-            // @extend .author__avatar;
-
-            border-radius: 5%;
-            max-width: 400px;
-            // max-height: 300px;
-        }
+.team {
+    .page {
+        float: none;
+        width: 100%;
     }
-    &-contact {
-        font-size: smaller;
-        ul {
-            margin-top: 0.5em;
-            list-style: none;
-        }
-        a {
-            span.glyphicon,
-            i[class*="fa"] {
-                color: black;
-                margin-right: 0.5em;
+
+    .author__bio > p {
+        font-size: medium; // smaller;
+    }
+
+    .author__content {
+        margin: 0.5em 0 0 0.5em;
+    }
+}
+
+.bio {
+    &__page {
+        margin-top: 1em;
+
+        header {
+            small {
+                color: darkgrey;
+                font-weight: 200;
             }
+
+            .content {
+                vertical-align: top;
+                padding-left: 1em;
+            }
+
+            .avatar {
+                // @extend .author__avatar;
+
+                border-radius: 5%;
+                max-width: 400px;
+                // max-height: 300px;
+            }
+        }
+        &-contact {
+            font-size: smaller;
+            ul {
+                margin-top: 0.5em;
+                list-style: none;
+            }
+            a {
+                span.glyphicon,
+                i[class*="fa"] {
+                    color: black;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    } 
+    
+    &__card {
+        margin: 1em;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 1px 2px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        h4 {
+            margin-top: 0;
         }
     }
 }
+
+
 
 // mmistakes default
 // https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss
