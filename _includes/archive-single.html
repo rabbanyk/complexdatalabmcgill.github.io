@@ -33,18 +33,42 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
 
+    <ul class="icon-list fa-ul" style="margin-left: 1em;">
+      {% if post.author %}
+        <li>
+          <p class="page__meta">
+            <span class="fa-li"><i class="fas fa-fw fa-user-edit" aria-hidden="true"></i></span>
+            <a href="/team/{{post.author | downcase | url_encode}}">{{ post.author }}</a>
+          </p>
+        </li>
+      {% endif %}
+      
+      <li>
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+          <p class="page__meta">
+            <span class="fa-li"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></span>
+            <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
+          </p>
         {% endif %}
+      </li>
+
+      {% if post.read_time %}
+        <li>
+          <p class="page__meta">
+              <span class="fa-li"><i class="fas fa-fw fa-clock" aria-hidden="true"></i></span>
+              {% include read-time.html %}
+          </p>
+        </li>
+      {% endif %}
+
+      
+    </ul>
+    
 
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
@@ -62,3 +86,41 @@
 
   </article>
 </div>
+
+{%- comment -%}
+{% if post.author %}
+    <p class="page__meta">
+      <span>
+        <i class="fas fa-user-edit" aria-hidden="true"></i>
+      </span>
+      <a href="/team/{{post.author | downcase | url_encode}}">{{ post.author }}</a>
+    </p>
+  {% endif %}
+
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.date %}
+      <p class="page__meta">
+        <span>
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </span>
+        <span>
+          Published: 
+          <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
+        </span>
+      </p>
+    {% endif %}
+
+    {% if post.read_time %}
+      <p class="page__meta">
+        <span>
+          <i class="fas fa-clock" aria-hidden="true"></i>
+        </span>
+        <span>
+          {% include read-time.html %}
+        </span>
+      </p>
+    {% endif %}
+{%- endcomment -%}

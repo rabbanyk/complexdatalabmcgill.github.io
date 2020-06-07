@@ -2,7 +2,7 @@ Albert Orozco Camacho:
   role        : students
   name        : "Albert Orozco Camacho"
   bio         : "MSc student interested in all things related to social network interactions."
-  avatar      : "albert.png"
+  avatar      : "assets/images/teampic/albert.png"
   title       : "MSc Machine Learning"
   links:
     - label: "Email"
@@ -19,7 +19,7 @@ Kellin Pelrine:
   role        : students
   name        : "Kellin Pelrine"
   bio         : "PhD student (starting Fall 2020) excited to discuss all problems with real-world impact. Out to solve them with the magic of ML. Enjoys fusing different perspectives together with the glue of data and computation, from problem-specific domain knowledge to his background in economics and math."
-  avatar      : "kellin.jpg"
+  avatar      : "assets/images/teampic/kellin.jpg"
   title       : "PhD Machine Learning"
   links:
     - label: "Email"
@@ -32,7 +32,7 @@ Kellin Pelrine:
 Jacob Danovitch:
   role        : students
   name        : "Jacob Danovitch"
-  avatar      : "jacob.jpg"
+  avatar      : "assets/images/teampic/jacob.jpg"
   bio         : "Incoming MSc student and data science intern at Microsoft Search, Assistant and Intelligence. Interested in the intersection of natural language processing and network science, with a focus on social media."
   title       : "MSc. Machine Learning"
   links:

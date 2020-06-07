@@ -1,7 +1,7 @@
 {% assign contact = member.links %}
 {% assign bio_url = member.name | downcase | url_encode %}
 {% capture thumbnail %}
-    {{ site.url }}{{ site.baseurl }}/assets/images/teampic/{{ member.avatar | default: 'bio-photo.jpg' }}
+    {{ site.url }}{{ site.baseurl }}/{{ member.avatar | default: 'assets/images/teampic/bio-photo.jpg' }}
 {% endcapture %}
 
 {%- comment -%}

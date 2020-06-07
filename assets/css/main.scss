@@ -1,9 +1,25 @@
 --- 
 --- 
 
-// @import "bootstrap";
-// @import "bootstrap/css/bootstrap.css";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css");
+
+.page__meta {
+    span {
+        padding: 1px;
+    }
+}
+
+ul.icon-list { 
+    margin-top: 0.5em;
+
+    padding: 0;
+    list-style: none;
+
+    li * {
+        text-decoration: none;
+        color: black;
+    }    
+}
 
 .team {
     .page {
@@ -39,16 +55,15 @@
                 // @extend .author__avatar;
 
                 border-radius: 5%;
-                max-width: 400px;
+                min-width: 100%;
+                // max-width: 100%;
+                // max-width: 400px;
                 // max-height: 300px;
             }
         }
         &-contact {
-            font-size: smaller;
-            ul {
-                margin-top: 0.5em;
-                list-style: none;
-            }
+            font-size: smaller;    
+
             a {
                 span.glyphicon,
                 i[class*="fa"] {

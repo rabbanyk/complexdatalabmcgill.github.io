@@ -16,3 +16,14 @@ https://complexdatalabmcgill.github.io
   bundle exec jekyll serve --host=0.0.0.0
   ```
 - Visualize at http://localhost:4000
+
+## To Do
+
+- [ ] Beautify author design
+  - [ ] Add all authors
+  - [x] Display a list of authors' avatars
+  - [x] Make an individual page for each author
+- [ ] Add sections
+  - [ ] Literature review/reading group
+  - [ ] Announcements 
+  - [ ] Works in the group

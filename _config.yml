@@ -15,13 +15,16 @@
 # in the templates via {{ site.myvariable }}.
 title: Complex Data Lab McGill
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  The McGill University's Complex Data Lab blog.
-# twitter_username: username
+description: "The McGill University's Complex Data Lab blog."
 repository: ComplexDataLabMcGill/complexdatalabmcgill.github.io
 github_username: ComplexDataLabMcGill
-minimal_mistakes_skin: air
+minimal_mistakes_skin: default
+
 search: true
+words_per_minute: 150
+
+locale: "en-US"
+timezone: America/Toronto # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Build settings
 markdown: kramdown
@@ -30,7 +33,6 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/Toronto # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Markdown Processing
 kramdown:
