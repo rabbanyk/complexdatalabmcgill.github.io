@@ -19,7 +19,7 @@ Kellin Pelrine:
   role        : students
   name        : "Kellin Pelrine"
   bio         : "PhD student (starting Fall 2020) excited to discuss all problems with real-world impact. Out to solve them with the magic of ML. Enjoys fusing different perspectives together with the glue of data and computation, from problem-specific domain knowledge to his background in economics and math."
-  avatar      : "assets/images/teampic/kellin.jpg"
+  avatar      : "assets/images/teampic/kp_pic.jpg" # kellin.jpg
   title       : "PhD Machine Learning"
   links:
     - label: "Email"

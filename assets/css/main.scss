@@ -9,6 +9,22 @@
     }
 }
 
+.archive__item {
+    @extend .hover-card;
+    padding: 10px;
+}
+
+.hover-card { 
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 1px 2px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+}
+
+
 ul.icon-list { 
     margin-top: 0.5em;
 
@@ -75,13 +91,12 @@ ul.icon-list {
     } 
     
     &__card {
+        @extend .hover-card;
         margin: 1em;
-        transition: 0.3s;
-        cursor: pointer;
 
-        &:hover {
-            box-shadow: 1px 2px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        .author__avatar > img {
+            max-width: 110px;
+            max-height: 110px;
         }
 
         h4 {
