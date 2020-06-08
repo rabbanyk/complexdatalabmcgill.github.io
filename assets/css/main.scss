@@ -1,0 +1,116 @@
+--- 
+--- 
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css");
+
+.page__meta {
+    span {
+        padding: 1px;
+    }
+}
+
+.archive__item {
+    @extend .hover-card;
+    padding: 10px;
+}
+
+.hover-card { 
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 1px 2px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+}
+
+
+ul.icon-list { 
+    margin-top: 0.5em;
+
+    padding: 0;
+    list-style: none;
+
+    li * {
+        text-decoration: none;
+        color: black;
+    }    
+}
+
+.team {
+    .page {
+        float: none;
+        width: 100%;
+    }
+
+    .author__bio > p {
+        font-size: medium; // smaller;
+    }
+
+    .author__content {
+        margin: 0.5em 0 0 0.5em;
+    }
+}
+
+.bio {
+    &__page {
+        margin-top: 1em;
+
+        header {
+            small {
+                color: darkgrey;
+                font-weight: 200;
+            }
+
+            .content {
+                vertical-align: top;
+                padding-left: 1em;
+            }
+
+            .avatar {
+                // @extend .author__avatar;
+
+                border-radius: 5%;
+                min-width: 100%;
+                // max-width: 100%;
+                // max-width: 400px;
+                // max-height: 300px;
+            }
+        }
+        &-contact {
+            font-size: smaller;    
+
+            a {
+                span.glyphicon,
+                i[class*="fa"] {
+                    color: black;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    } 
+    
+    &__card {
+        @extend .hover-card;
+        margin: 1em;
+
+        .author__avatar > img {
+            max-width: 110px;
+            max-height: 110px;
+        }
+
+        h4 {
+            margin-top: 0;
+        }
+    }
+}
+
+
+
+// mmistakes default
+// https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

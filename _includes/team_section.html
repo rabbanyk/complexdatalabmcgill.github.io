@@ -1,0 +1,19 @@
+<section class="team_section container">
+    <h2>{{ section_name | capitalize }}</h2>
+
+    {% comment %}
+        https://stackoverflow.com/a/45340994/6766123
+    {% endcomment %}
+
+    {% assign rows = section.size | divided_by: 2.0 | ceil %}
+    {% for i in (1..rows) %}
+
+        {% assign offset = forloop.index0 | times: 2 %}
+        <div class="row">
+            {% for member in section limit:2 offset:offset %}
+                {% include team_member.html %}
+            {% endfor %}
+        </div>
+
+    {% endfor %}
+</section>

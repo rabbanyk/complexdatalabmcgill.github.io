@@ -1,0 +1,26 @@
+{% assign contact = member.links %}
+{% assign bio_url = member.name | downcase | url_encode %}
+{% capture thumbnail %}
+    {{ site.url }}{{ site.baseurl }}/{{ member.avatar | default: 'assets/images/teampic/bio-photo.jpg' }}
+{% endcapture %}
+
+{%- comment -%}
+    anchor tags didn't work here for some reason;
+    used onclick instead
+{%- endcomment -%}
+
+<div class="col-sm-6">
+    <div class="bio__card row" onclick='window.location.href = "/team/{{ bio_url }}"'>
+        <div class="author__avatar">
+            <img src="{{ thumbnail }}" />
+        </div>
+        <div class="author__content col-sm-6">
+            <h4 class="author__name">
+                <a href="/team/{{ bio_url }}" style="color: black;">{{ member.name }}</a>
+            </h4>
+            <div class="author__bio">
+                <p>{{ member.title }}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -16,6 +16,8 @@ in relation to technology and social media. The intention is to organize
 my thoughts and to provide the reader with condensed information beyond
 what can be found in the abstract.
 
+<!--more-->
+
 For each paper I give the setting, main contributions, data used, and
 some strengths and limitations. These opinions are my own and are
 presented to give the reader some ideas. They do not represent an

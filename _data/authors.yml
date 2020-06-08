@@ -1,7 +1,9 @@
 Albert Orozco Camacho:
+  role        : students
   name        : "Albert Orozco Camacho"
   bio         : "MSc student interested in all things related to social network interactions."
-  avatar      : "/assets/images/albert.png"
+  avatar      : "assets/images/teampic/albert.png"
+  title       : "MSc Machine Learning"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -14,9 +16,11 @@ Albert Orozco Camacho:
       url: "https://github.com/alorozco53"
 
 Kellin Pelrine:
+  role        : students
   name        : "Kellin Pelrine"
   bio         : "PhD student (starting Fall 2020) excited to discuss all problems with real-world impact. Out to solve them with the magic of ML. Enjoys fusing different perspectives together with the glue of data and computation, from problem-specific domain knowledge to his background in economics and math."
-  avatar      : "/assets/images/kellin.jpg"
+  avatar      : "assets/images/teampic/kp_pic.jpg" # kellin.jpg
+  title       : "PhD Machine Learning"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -24,3 +28,68 @@ Kellin Pelrine:
     - label: "Github"
       icon: "fab fa-fw fa-github-square"
       url: "https://github.com/kellinpelrine/"
+
+Jacob Danovitch:
+  role        : students
+  name        : "Jacob Danovitch"
+  avatar      : "assets/images/teampic/jacob.jpg"
+  bio         : "Incoming MSc student and data science intern at Microsoft Search, Assistant and Intelligence. Interested in the intersection of natural language processing and network science, with a focus on social media."
+  title       : "MSc. Machine Learning"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jacob.danovitch@mail.mcgill.ca"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/jacobdanovitch/"
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "http://jacobdanovitch.me"
+
+
+Reihaneh Rabbany:
+  role        : faculty
+  name        : "Reihaneh Rabbany"
+  avatar      : ""
+  bio         : ""
+  title       : "Assistant Professor"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:kellin.pelrine@mail.mcgill.ca"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/kellinpelrine/"
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "http://www.reirab.com/"
+
+Andy Huang:
+  role        : students
+  name        : "Andy Huang"
+  avatar      : ""
+  bio         : ""
+  title       : "PhD Machine Learning"
+
+
+Aayushi Kulshrestha:
+  role        : students
+  name        : "Aayushi Kulshrestha"
+  avatar      : ""
+  bio         : ""
+  title       : "MSc. Machine Learning"
+
+Junhao Wang:
+  role        : students
+  name        : "Junhao Wang"
+  avatar      : ""
+  bio         : ""
+  title       : "MSc. Machine Learning"
+
+Sacha Lévy:
+  role        : students
+  name        : "Sacha Lévy"
+  avatar      : ""
+  bio         : ""
+  title       : "BEng. Computer Engineering"
+
