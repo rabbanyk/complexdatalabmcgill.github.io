@@ -3,7 +3,7 @@ Albert Orozco Camacho:
   name        : "Albert Orozco Camacho"
   bio         : "MSc student interested in all things related to social network interactions."
   avatar      : "assets/images/teampic/albert.png"
-  title       : "MSc Machine Learning"
+  title       : "MSc Computer Science"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -68,9 +68,18 @@ Andy Huang:
   role        : students
   name        : "Andy Huang"
   avatar      : ""
-  bio         : ""
-  title       : "PhD Machine Learning"
-
+  bio         : "I am a master student at Mila and McGill University, supervised by Professor Reihaneh Rabbany and Professor Guillaume Rabusseau. Previously I obtained an Honours in Computer Science from McGill University in 2019. My current research focus on anomaly detection in graph data using tensor factorization techniques. I have also worked on integrating autoML techniques into continual learning settings."
+  title       : "MSc Computer Science"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:shenyang.huang@mail.mcgill.ca"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/shenyangHuang"
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "https://www.cs.mcgill.ca/~shuang43/"
 
 Aayushi Kulshrestha:
   role        : students
