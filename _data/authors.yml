@@ -81,6 +81,23 @@ Andy Huang:
       icon: "fas fa-link"
       url: "https://www.cs.mcgill.ca/~shuang43/"
 
+Charlotte Ding:
+  role        : students
+  name        : "Charlotte Ding"
+  avatar      : "assets/images/teampic/charlotte.jpg"
+  bio         : "Master student at Mila/McGill and software engineer at Expedia. Interested in graph representation learning and network science."
+  title       : "MSc Machine Learning"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:xiaoye.ding@mail.mcgill.ca"
+    # - label: "Github"
+    #   icon: "fab fa-fw fa-github-square"
+    #   url: "https://github.com/shenyangHuang"
+    # - label: "Website"
+    #   icon: "fas fa-link"
+    #   url: "https://www.cs.mcgill.ca/~shuang43/"
+
 Aayushi Kulshrestha:
   role        : students
   name        : "Aayushi Kulshrestha"
