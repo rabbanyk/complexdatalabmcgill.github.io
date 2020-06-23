@@ -17,11 +17,9 @@ tags:
 
 This post is part of a literature review on misinformation, especially in relation to technology and social media. The intention is to organize my thoughts and to provide the reader with condensed information beyond what can be found in the abstract.
 
-<!--more-->
-
 For each paper I give the setting, main contributions, data used, and some strengths and limitations. These opinions are my own and are presented to give the reader some ideas. They do not represent an ironclad critical review; your judgment may vary, and so might mine on subsequent readings. Also, my depth of reading varies depending on relevance to our research - some papers that weren’t very relevant are marked below as skimmed or not read at all.
 
-The following are from searching for the keyword **"misinformation,"** among **2019 KDD** (Knowledge Discovery and Data Mining), **ASONAM** (Advances in Social Networks Mining and Analysis) papers. The latter conference accepts two submission formats; I indicate them here by the title as “short” (4 pages or less) and “long” (8 pages or less). <a href="https://dl.acm.org/action/doSearch?AllField=misinformation&expand=all&ConceptID=119664&AfterYear=2019&BeforeYear=2019&queryID=30/815270665" target="_blank">Link to search</a>.
+The following are from searching for the keyword **"misinformation,"** among **2019 KDD** (Knowledge Discovery and Data Mining), **ASONAM** (Advances in Social Networks Mining and Analysis) papers. The latter conference accepts two submission formats; I indicate them here by the title as “short” (4 pages or less) and “long” (8 pages or less). <a href="https://dl.acm.org/action/doSearch?AllField=misinformation&amp;expand=all&amp;ConceptID=119664&amp;AfterYear=2019&amp;BeforeYear=2019&amp;queryID=30/815270665" target="_blank">Link to search</a>.
 
 **18 results total.** Results are ordered here according to the search results order.
 
@@ -41,7 +39,6 @@ Strengths: partisanship as a predictor is seemingly obvious but perhaps overlook
 
 Limitations: highlights further research needed with seniors, but they explicitly state their data collected there is too small to be of use beyond qualitative suggestions.
 
-Potential Uses: citation for "network info is important." Partisanship as feature (suggest only “how partisan” instead of “how left or right” to avoid criticism of bias - it’s still enough to be useful).
 
 **Fake News Research: Theories, Detection Strategies, and Open Problems (KDD Tutorial)**
 
@@ -53,7 +50,6 @@ Strengths: sections 1, 2, and 4 are nice overviews. There’s a lot of potential
 
 Limitations: it’s disappointing that there doesn’t seem to be a recording. Section 3 in particular can be hard to follow from the slides alone; referring to the original papers will often be needed if seeking a thorough understanding.
 
-Potential Uses: inspiration from general ideas. Citation for general ideas/open problems. Source of further literature.
 
 **Understanding Information Operations using YouTubeTracker (ASONAM short)**
 
@@ -63,7 +59,6 @@ Setting: suggests lack of in-depth tools for analyzing Youtube content, user beh
 
 Limitations: seemingly no longer exists - no website at given link and cursory Google search did not find it either, though could be buried deeper.
 
-Potential Uses: contact authors for more info if working with Youtube data.
 
 **Semi-Supervised Learning and Graph Neural Networks for Fake News Detection (ASONAM short)**
 
@@ -79,7 +74,6 @@ Strengths: using semi-supervised learning seems worthwhile to investigate in thi
 
 Limitations: while experimental results suggest their algorithm is working, with 10% or more labeled data the performance benefit is minimal or none. They compare with one other method (Guacho et al. 2018) and two simpler baseline methods (SVM and random forest models on bag-of-words features), but those baselines outperform Guacho et al. in every test, suggesting Guacho et al. may not be appropriate for this setting or data and therefore the comparison is not strong. Their embedding and graph construction methods (GloVe and k-nn) are not the most sophisticated ones out there. 
 
-Potential Uses: general semi-supervised ideas here might give good results with other more sophisticated methods.
 
 **5 sources of clickbaits you should know! using synthetic clickbaits to improve prediction and distinguish between bot-generated and human-written headlines (ASONAM long)**
 
@@ -95,7 +89,6 @@ Strengths: synthetic data improves performance of a variety of detection algorit
 
 Limitations: VAE and infoVAE only generation algorithms tested. Insufficient how well humans can detect real vs. synthetic (relevant for determining how much room remains for improvement).
 
-Potential Uses: general ideas and methods - data augmentation - may be useful in misinformation settings beyond clickbait, since limited labeled data is a pervasive problem.
 
 **A Postmortem of Suspended Twitter Accounts in the 2016 U.S. Presidential Election (ASONAM long)**
 
@@ -111,7 +104,6 @@ Strengths: this avoids the sparsity issue due to Twitter streaming API maxing ou
 
 Limitations: focus on one topic makes it more difficult to use results on future topics.
 
-Potential Uses: factors showing differences between suspended and normal users could be useful features. Data collection avoiding sparsity is probably better than alternative, even if it does require a limited topic or set of users.
 
 **News Credibility Scroing [sic]: Suggestion of research methodology to determine**
 
@@ -129,7 +121,6 @@ Strengths: some detailed thoughts on evaluating credibility.
 
 Limitations: at the time this paper was written, this was a proposed method, not a finished or even prototyped one. Logistic regression seems a difficult choice to use in this setting, given hefty dependence on feature engineering and the complexity of the problem.
 
-Potential Uses: perhaps inspiration. Nothing concrete.
 
 **MediaRank: Computational Ranking of Online News Sources (KDD)**
 
@@ -153,7 +144,6 @@ Although this evidence is qualitative rather than quantitative, it is not clear 
 
 Also, the API link appears to redirect to a comparison with other similar sites, and contains no information about using the API.
 
-Potential Uses: if these rankings represented reliable news sites, this would be an excellent resource as both a feature and metric. However, given the above, caution is needed. It may be useful as one additional feature/metric, but not the main one, or at least not without further analysis.
 
 **SAME: Sentiment-Aware Multi-Modal Embedding for Detecting Fake News (ASONAM long)**
 
@@ -169,7 +159,6 @@ Strengths: good ideas for combining different data modes, which are validated by
 
 Limitations: uses images (with the article itself), content, sentiment, similarity but not user networks, syntax, or website structure. In other words, some modes that are shown relevant in other works are missing here. Individual mode methods such as VGGNet and GloVe are old and there may be better ones.
 
-Potential Uses: citation/source of other literature for multi-modal methods. Very useful ideas for combining modes. Could combine with other modes.
 
 **Dormant Bots in Social Media: Twitter and the 2018 U.S. Senate Election (ASONAM short)**
 
@@ -185,7 +174,6 @@ Strengths: problem makes sense. Real-world application had extremely strong effe
 
 Limitations: single case study. Evaluating effects and intentions of these bots is difficult, given they have no behavior, though this is not a limitation of the paper so much as the setting.
 
-Potential Uses: inspiring application model given the real-world impact. Classifying users as dormant bots might provide a useful feature (e.g. maybe there are malicious networks with some dormant bots and some active humans).
 
 **Multitask Learning for Blackmarket Tweet Detection (ASONAM short)**
 
@@ -201,7 +189,6 @@ Strengths: new (and worthwhile) area of investigation. Experimental results look
 
 Limitations: potential label validity concerns: since "non-blackmarket" tweets are collected from the same users as blackmarket ones, they might be posting them to other blackmarkets that weren’t scraped. Further, the real-world task would generally be identifying blackmarket tweets from random users, not identifying blackmarket tweets from users who definitely use the blackmarket.
 
-Potential Uses: extension by using random tweets instead of tweets from the same users as the blackmarket ones. Ideas for combining tasks and inputs may be useful. Data and data collection method could be useful to obtain labeled suspect activity.
 
 **Monitoring Individuals in Drug Trafficking Organizations: A Social Network Analysis (ASONAM short) ***and* **On Augmented Identifying Codes for Monitoring Drug Trafficking Organizations (ASONAM short)**
 
@@ -219,7 +206,6 @@ Strengths: theoretical results lead to algorithm that has certain optimality (gi
 
 Limitations: the big assumption - that one can extract all information with only surveillance on neighboring person, and with equal cost compared to surveilling the person themselves - is unlikely to hold in the real world. Further, this assumes the whole network has equal costs and benefits of surveillance, which is likewise unlikely (someone who might be the kingpin of a cartel, for example, surely does not have the same costs and benefits as some random drug user).
 
-Potential Uses: unknown potential relevance to HT project. Identifying codes idea might be applicable to misinformation intervention scenarios (select efficient people for intervention if they will spread the intervention to neighbors).
 
 **RumorSleuth: Joint Detection of Rumor Veracity and User Stance (ASONAM long)**
 
@@ -235,7 +221,6 @@ Strengths: good experimental results. Joint learning is better than doing each t
 
 Limitations: uses user features but not network ones. May be superseded by VRoC (<a href="https://dl.acm.org/doi/fullHtml/10.1145/3366423.3380054" target="_blank">https://dl.acm.org/doi/fullHtml/10.1145/3366423.3380054</a>), which does rumor detection and tracking as well, although performance on PHEME veracity classification looks slightly better here, while worse on stance classification.
 
-Potential Uses: this, along with some other papers like VRoC, suggests that multitask approaches are beneficial in a misinformation setting. Ideas need comparison with other methods but may be useful for doing this.
 
 **Rumor Detection in Social Networks via Deep Contextual Modeling (ASONAM long)**
 
@@ -251,7 +236,6 @@ Strengths: although there are plenty of papers using network-based features, thi
 
 Limitations: some other types of information (diffusion, domain/article features, etc.) are not used. They note GloVe’s optimal performance, among embedding methods, may be because data has similarities to Wikipedia, the corpus on which GloVe is trained, so more varied data would be helpful.
 
-Potential Uses: great ideas in combining different tweets’ content. Likely applicable to other combinations.
 
 **Detection of Topical Influence in Social Networks via Granger-Causal Inference: A Twitter Case Study (ASONAM long)**
 
@@ -283,7 +267,6 @@ Strengths: network design seems effective and experimental results are good. Exp
 
 Limitations: explainability evaluation limited a bit by lack of good baselines for comparison (new research area).
 
-Potential Uses: good ideas to incorporate and examine explainability when using attention mechanisms to combine muilti-modal data - which judging from other literature, is likely the right choice anyways. Might be worth discussing with Globalmail collaborators at some point.
 
 **Ranking in Genealogy: Search Results Fusion at Ancestry**
 
