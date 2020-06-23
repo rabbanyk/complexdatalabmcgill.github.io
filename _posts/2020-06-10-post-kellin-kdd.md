@@ -17,6 +17,8 @@ tags:
 
 This post is part of a literature review on misinformation, especially in relation to technology and social media. The intention is to organize my thoughts and to provide the reader with condensed information beyond what can be found in the abstract.
 
+<!--more-->
+
 For each paper I give the setting, main contributions, data used, and some strengths and limitations. These opinions are my own and are presented to give the reader some ideas. They do not represent an ironclad critical review; your judgment may vary, and so might mine on subsequent readings. Also, my depth of reading varies depending on relevance to our research - some papers that weren’t very relevant are marked below as skimmed or not read at all.
 
 The following are from searching for the keyword **"misinformation,"** among **2019 KDD** (Knowledge Discovery and Data Mining), **ASONAM** (Advances in Social Networks Mining and Analysis) papers. The latter conference accepts two submission formats; I indicate them here by the title as “short” (4 pages or less) and “long” (8 pages or less). <a href="https://dl.acm.org/action/doSearch?AllField=misinformation&amp;expand=all&amp;ConceptID=119664&amp;AfterYear=2019&amp;BeforeYear=2019&amp;queryID=30/815270665" target="_blank">Link to search</a>.
