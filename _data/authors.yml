@@ -119,3 +119,36 @@ Sacha Lévy:
   bio         : "I am an undergraduate student at McGill University and research assistant at Mila. I work on applied ML for social good. I focus on understanding criminal organisation behaviours on social networks and online escort marketplaces. I implement data pipelines. I am interested in artificial intelligence, computers and physics."
   title       : "BEng. Computer Engineering"
 
+Yifei Li:
+  role        : students
+  name        : "Yifei Li"
+  avatar      : "assets/images/teampic/yifei.jpg"
+  bio         : "I'm an undergraduate student in Computer Science at McGill University. I work on entity extraction in online escort ads. I am interested in data mining and natural language processing."
+  title       : "BSc. Computer Science" 
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:yifei.li@mail.mcgill.ca"
+
+Pratheeksha Nair:
+  role        : students
+  name        : "Pratheeksha Nair"
+  avatar      : "assets/images/teampic/pratheeksha.png"
+  bio         : "PhD student at Mila/McGill interested in using Machine Learning and AI for socially good applications. Especially interested in addressing questions related to the interpretability and explainability of models in socially relevant fields. Currently excited about developing methods to detect human trafficking from online escort advertisements."
+  title       : "PhD Computer Science"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pratheeksha.nair@mail.mcgill.ca"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: " https://github.com/nair-p"
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "https://nair-p.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/prathena_96"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/pnair96/"
