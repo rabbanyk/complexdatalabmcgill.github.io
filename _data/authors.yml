@@ -56,10 +56,10 @@ Reihaneh Rabbany:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:kellin.pelrine@mail.mcgill.ca"
+      url: "mailto:rrabba@cs.mcgill.ca"
     - label: "Github"
       icon: "fab fa-fw fa-github-square"
-      url: "https://github.com/kellinpelrine/"
+      url: "https://github.com/rabbanyk/"
     - label: "Website"
       icon: "fas fa-link"
       url: "http://www.reirab.com/"
